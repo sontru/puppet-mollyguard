@@ -1,0 +1,24 @@
+What is it?
+===========
+
+A Puppet module that can manage mollyguard and its configuration
+
+Usage:
+------
+
+First, you can define the variable $molly_guard_always_query_hostname 
+(default : false)
+
+Then, you just have to import the mollyguard class and it'll install the package
+and create the configuration file.
+
+Licensing
+=========
+
+This puppet module is licensed under the GPL version 3 or later. Redistribution
+and modification is encouraged.
+
+The GPL version 3 license text can be found in the "LICENSE" file accompanying
+this puppet module, or at the following URL:
+
+http://www.gnu.org/licenses/gpl-3.0.html
