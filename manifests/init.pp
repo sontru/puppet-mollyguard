@@ -2,13 +2,9 @@
 # Copyright (C) 2012 Yoann Laissus <yoann.laissus@gmail.com>
 # See LICENSE for the full license granted to you.
 
-class mollyguard {
-
-	$molly_guard_always_query_hostname = $molly_guard_always_query_hostname ? {
-		""      => false,
-		default => $molly_guard_always_query_hostname
-	}
-    
+class mollyguard(
+        $always_query_hostname = false
+) {
 	package { molly-guard:
 		ensure => installed,
 	}
