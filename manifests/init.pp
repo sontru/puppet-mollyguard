@@ -13,7 +13,7 @@ class mollyguard(
 		ensure  => present,
 		owner   => root,
 		group   => root,
-		mode    => 644,
+		mode    => "644",
 		content => template("mollyguard/rc.erb"),
 		require => Package['molly-guard']
 	}
